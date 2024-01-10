@@ -1,0 +1,98 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="#">Pages <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li>
+                    <a href="#">Team <i class="fas fa-caret-right"></i></a>
+                    
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="#"><img src="p.jpg"></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">FAQ</a>
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="#">AAAAAAA</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </div>
+        </li>
+      </ul>
+    </div>
+
+    <style>
+      :root {
+        --color-primary: #0073ff;
+        --color-white: #ffc400;
+        --color-black: #141d28;
+        --color-black-1: #212b38;
+      }
+
+      body {
+        font-family: sans-serif;
+      
+      }
+
+      .menu-bar ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .menu-bar ul li {
+        position: relative;
+      }
+
+      .menu-bar ul li a {
+        font-size: 20px;
+        color: var(--color-white);
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .dropdown-menu {
+        display: none;
+      }
+
+      .menu-bar ul li:hover .dropdown-menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: var(--color-black);
+      }
+
+      .menu-bar ul li:hover .dropdown-menu ul {
+        display: block;
+        margin: 10px;
+      }
+
+      .dropdown-menu-1 {
+        display: none;
+      }
+
+      .dropdown-menu ul li:hover .dropdown-menu-1 {
+        display: block;
+        position: absolute;
+        left: 150px;
+        top: 0;
+        background-color: var(--color-black);
+      }
+
+    </style>
+  </body>
+</html>

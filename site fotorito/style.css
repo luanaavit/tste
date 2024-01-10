@@ -1,0 +1,509 @@
+@font-face{
+    font-family: "sora";
+    src: url('fontes\sora-font.ttf');
+  }
+
+@font-face{
+    font-family: "montserrat";
+    src: url('fontes\montserrat-font.ttf');
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+body{
+  overflow-x: hidden;
+  width: 100%;
+}
+
+header{
+  width: 100%;
+}
+
+
+section{width: 100%;}
+  section h1{
+    font-family: montserrat;
+    color: #491D04;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  section h1 span{
+    font-weight: 700;
+  }  
+
+  .container{display: flex;}
+
+  .produtos{
+    display: flex;
+    width: 50%;
+    align-items: center;
+  }
+
+  ul{
+    text-align: center;
+    font-family: sora;
+    list-style: none;
+    color: #717171;
+    font-weight: 300;
+  }
+
+  .dropdown-left{display: none;}
+  .produtos li:hover .dropdown-left{display: block;}
+    .sub-dropdown-left{display: none;}
+    .dropdown-left li:hover .sub-dropdown-left{display: block;}
+    
+
+  .dropdown-right{display: none;}
+  .produtos li:hover .dropdown-right{display: block;}
+    .sub-dropdown-right{display: none;}
+    .dropdown-right li:hover .sub-dropdown-right{display: block;}
+
+  
+    h4{
+      font-family: sora;
+      font-weight: 400;
+      color: #FE8F33;
+    }
+    h3{
+      font-family: sora;
+      font-weight: 700;
+      color: #FF7400;
+    }
+
+
+footer{
+    background-color: #FF7400;
+    width: 100%;
+  }
+
+  .info{
+    font-family: montserrat;
+    font-weight: 600;
+    color:#fff;
+    margin: auto 0;
+  }
+
+  h2{
+    font-family: montserrat;
+    font-weight: 600;
+    color:#fff;
+    text-align: center;
+  }
+
+  .redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;    
+  }
+
+  .redes-sociais img:hover{
+    transform: scale(1.15);
+    transition: .5s;
+  }
+
+
+ 
+
+
+
+     
+      
+
+  @media screen and (min-width: 1025px) and (max-width: 3000px){
+    #celular{
+        display: none;
+    }
+  
+    header{
+      display: flex;
+      justify-content: center;
+    }
+      header .logotipo{align-self: center;}
+
+      header .logotipo {
+        width: 15vh;
+        height: auto;
+        padding: 3vh;
+      }
+
+      .caneca-celular{display: none;}
+            
+        section h1{font-size: 5.38vh; margin-left: 0;}    
+        section h1 span{font-size: 6.025vh;}
+            
+        .produtos{
+            flex-direction: column;
+            margin: 8vh 0 0 5vh; 
+            align-self: normal;
+          }          
+    
+        ul{
+          font-size: 2.25vh;
+          display: block;           
+        }
+        .lista-produtos{
+          width: 70%;
+          line-height: 5vh;   
+          position: relative;
+          margin-bottom: 0;
+        }
+        #align-prod{
+          margin: auto;
+          align-self: flex-end;
+        }          
+
+          .produtos li:hover{
+              color: #FF7400;
+              font-weight: 600;
+              transition: .3s;
+              cursor: pointer;   
+              display: block;        
+              padding: 2vh 0;
+              background-color: transparent;
+            }
+        
+        .dropdown-left{            
+          position: absolute;
+          z-index: 2;
+
+          width:  30vh; 
+          margin: -4vh 0 0 45vh;
+          padding: 1vh 2.5vh;
+          border: 1px solid #F6F6F6;
+          background: #FAFAFA;
+          box-shadow: 0px -5px 25px 0px rgba(31, 30, 30, 0.17);
+        }
+        .dropdown-left li{
+          margin: 1vh 0 1vh 0;
+          line-height: normal;
+          width: 100%;
+          padding: 2vh 0; 
+          font-size: 2.25vh;
+        }    
+      
+        .sub-dropdown-left{
+          position: absolute;   
+          z-index: 1;       
+          
+          background-color: #FAFAFA;
+          padding: 0 2.5vh;
+          box-shadow: 20px 0px 25px 0px rgba(0, 0, 0, 0.17);
+          width:  30vh; 
+          margin: -6.8vh 0 0 27vh;
+        } 
+            .sub-dropdown-left li:hover h4{
+              font-weight: 600;
+              transition: .7s;
+              color: #FF7400;
+            }
+            .sub-dropdown-left li:hover h3{
+              font-weight: 900;
+              transition: .8s;
+            }
+        
+    
+        .dropdown-right{
+          position: absolute;
+          z-index: 2;
+
+
+          width:  30vh; 
+          margin: -4vh 0 0 -3vh;
+          padding: 1vh 2.5vh;
+          border: 1px solid #F6F6F6;
+          background: #FAFAFA;
+          box-shadow: 0px -5px 25px 0px rgba(31, 30, 30, 0.17);   
+      }
+      .dropdown-right li{
+        margin: 1vh 0 1vh 0;
+        line-height: normal;
+        width: 100%;
+        padding: 2vh 0; 
+        font-size: 2.25vh;
+      }    
+        .sub-dropdown-right{
+          position: absolute;   
+          z-index: 1;       
+          
+          background-color: #FAFAFA;
+          padding: 0 2.5vh;
+          box-shadow: -20px 0px 25px 0px rgba(0, 0, 0, 0.17);
+          width:  30vh; 
+          margin: -6.8vh 0 0 -36vh;
+        }    
+        .sub-dropdown-right li:hover h4{
+          font-weight: 600;
+          transition: .7s;
+          color: #FF7400;
+        }
+        .sub-dropdown-right li:hover h3{
+          font-weight: 900;
+          transition: .8s;
+        }
+
+        .produto{width: auto;}
+        .produto img{
+          height: 26vh;
+        }
+        h4{font-size: 2.2vh;}
+        h3{
+          font-size: 2.5vh;
+          margin-top: 1vh;
+        }
+        
+      
+        .caneca img{
+          height: 65vh;
+        }
+        .caneca{
+          align-self: right;
+          width: 50%;
+          display: flex;
+          }
+    
+        .camisa img{
+          height: 80vh;
+          margin: 0 auto;
+        }
+        .camisa{
+          width: 50%;
+          display: flex;
+          align-self: flex-start;
+          margin-left: 23.5vh;
+        }
+      
+        .title{margin-bottom: 4vh; align-self: center;}
+
+    
+        .informacoes{
+          display: flex;
+          justify-content: space-around;
+          text-align: center;
+          height: 65vh;
+        }
+          #caminhao img{height: 14vh;}
+          #caminhao figcaption{margin:0;}
+        
+          .info img{height: 10vh;}
+          figcaption{margin-top: 2.75vh;}
+          .info{font-size: 2.3vh;}
+    
+          h2{font-size: 4vh;}
+    
+          .redes-sociais{height: 65vh;}
+          .redes-sociais img{
+            height: 11vh;     
+          }
+      }        
+
+      @media screen and (min-width: 100px) and (max-width: 767px){
+        .camisa{display: none;}
+        .caneca{display: none;}
+    
+        .caneca-celular{
+          width: 50%;
+          align-self: flex-end;
+          margin: -10vh 0 0 -20vh;
+          display: flex;
+        }
+        .caneca-celular img{
+          height: 0vh;
+          margin: 0 0 0 -9vh;
+    
+        }
+    
+        header{
+          display: flex;
+          width: 100%;
+          justify-content: start;
+        }
+    
+        header .logotipo{
+          width: auto;
+          height: 5vh;
+          padding: 3vh 5vh;
+          align-self: flex-start;
+        }
+    
+        .container{display: flex;}
+    
+        .title{margin-left:4vh; align-self: flex-start;}    
+    
+          section h1{
+            font-size: 3.3vh;
+            margin-top: -2vh;
+            align-self: flex-start;
+            }    
+          section h1 span{font-size: 3.7vh;}
+    
+          #celular{
+            text-align: center;
+            font-size: 1.7vh;
+            margin: 3vh 0 6vh 0;
+            display: block;
+          }
+            
+          .produtos{
+            flex-direction: column;
+            width: 100%;
+            align-self: flex-start;
+          }
+    
+    
+          ul{
+            display: flex;
+            font-size: 1.3vh;        
+          }
+          .lista-produtos{
+            margin-bottom: 31.5vh;
+            width: 100%;
+            justify-content: space-around;
+            line-height: normal;
+          }
+          #align-prod{margin: 0vh 0 30vh 0;} 
+    
+            .lista-produtos li:hover{
+              background-color: #FF7400;
+              color: #fff;
+              padding: 1vh;
+              border-radius: 5vh;
+              transition: .3s;  
+              font-weight: 400;
+            }
+    
+          .dropdown-left{
+            margin: 1.5vh 0 0 0;    
+    
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 95%;
+            z-index: 1;     
+          }
+          .dropdown-left li{
+            width: 100%;
+            font-size: 1.25vh;
+          }    
+            .dropdown-left li:hover{
+              background-color: #FF7400;
+              color: #fff;
+              padding:.9vh;
+              border-radius: 5vh;
+              transition: .3s;                  
+            } 
+              .sub-dropdown-left li:hover{
+                padding: 0;
+                border-radius: 0;
+                transition: 0;
+                background-color: transparent
+              }
+    
+            .sub-dropdown-left{
+              margin: 1vh 0 0 0; 
+    
+              position: absolute;
+              width: 85%;
+              left: 14.5%;
+              z-index: 10;
+    
+              display: none;
+            }     
+          
+          .dropdown-right{
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: none;
+            width: 95%;
+            z-index: 1;     
+            margin: 1.5vh 0 0 0;    
+            
+          }
+          .dropdown-right li{
+            margin: 0;             
+            line-height: normal;
+            padding: 0vh 0; 
+    
+    
+            width: 100%;
+            font-size: 1.25vh;
+          }    
+            .dropdown-right li:hover{
+              background-color: #FF7400;
+              color: #fff;
+              padding:.9vh;
+              border-radius: 5vh;
+              transition: .3s;    
+            } 
+              .sub-dropdown-right li:hover{
+                background-color: transparent;
+                padding: 0;
+                border-radius: 0;
+                transition: 0;
+              }
+    
+            .sub-dropdown-right{
+              padding: 0;
+              border: none;
+              background: transparent;
+              box-shadow: none;
+              margin: 1vh 0 0 0;  
+    
+              position: absolute;
+              width: 85%;
+              left: 14.5%;
+              z-index: 10;
+    
+              display: none;
+            } 
+            
+            .produto{
+              width: 20vh;
+            }
+            .produto img{
+              height: 18vh;
+            }
+            h4{font-size: 1.2vh;}
+            h3{font-size: 1.5vh;}
+          
+    
+          .informacoes{
+            width: 90%;
+            margin: auto;
+            height: 45vh;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+          }
+            #caminhao img{height: 10.5vh;}
+            #caminhao figcaption{margin:0;}
+          
+            .info img{height: 7vh;}
+            figcaption{margin-top: 2.3vh;}
+            .info{font-size: 1.9vh;}
+    
+            h2{font-size: 3.3vh;}
+    
+            .redes-sociais{height: 45vh; display:flex;}
+            .redes-sociais img{
+              height: 8vh;   
+              width: auto;  
+            }
+          
+          }
+
+      
+
+    
+
+
