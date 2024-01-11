@@ -65,7 +65,6 @@
         color: #FF7400;
       }
 
-
       footer{
         background-color: #FF7400;
         width: 100%;
@@ -172,7 +171,7 @@
     ul{
       display: flex;
       font-size: 1.3vh;   
-      width: 600px;     
+      width: 550px;     
     }
     .lista-produtos{
       margin-bottom: 35.5vh;
@@ -207,7 +206,7 @@
       font-size: 1.2vh;
     }    
       .dropdown-left li:hover{
-        background-color: #FF7400;
+        background-color: #f38327;
         color: #fff;
         padding:.9vh;
         border-radius: 5vh;
@@ -222,7 +221,6 @@
 
       .sub-dropdown-left{
         margin:1vh 0 0 0; 
-
         position:absolute;
         width: 80%;
         left: 0;
@@ -249,7 +247,7 @@
       font-size: 1.2vh;
     }    
       .dropdown-right li:hover{
-        background-color: #FF7400;
+        background-color: #f38327;
         color: #fff;
         padding:.9vh;
         border-radius: 5vh;
@@ -274,13 +272,15 @@
 
       h6{
         font-size: 1.2vh;
-        margin: 6vh 0vh;
+        margin: 6vh 0vh 0 0;
         text-align: center;
       }
       
       .produto{
         width: 20vh;
       }
+
+
       .produto img{
         height: 18vh;
       }
@@ -817,7 +817,7 @@ header{
       padding: 0 2.5vh;
       box-shadow: -20px 0px 25px 0px rgba(0, 0, 0, 0.17);
       width:  30vh; 
-      margin: -6.8vh 0 0 -36vh;
+      margin: -6.8vh 0 0 -33vh;
     }    
     .sub-dropdown-right li:hover h4{
       font-weight: 600;
@@ -889,11 +889,3 @@ header{
         height: 11vh;     
       }
 }
-            
-
-
-
-
-
-
- 
