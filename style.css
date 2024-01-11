@@ -183,7 +183,7 @@
      #align-prod{margin: 0vh 0 35vh 0;} 
 
       .lista-produtos li:hover{
-        background-color: #FF7400;
+        background-color: #ee7410;
         color: #fff;
         padding: 1vh;
         border-radius: 5vh;
@@ -206,7 +206,7 @@
       font-size: 1.2vh;
     }    
       .dropdown-left li:hover{
-        background-color: #f38327;
+        background-color: rgb(223, 121, 39);
         color: #fff;
         padding:.9vh;
         border-radius: 5vh;
@@ -287,6 +287,7 @@
       h4{font-size: 1.2vh;}
       h3{font-size: 1.5vh;}
     
+      footer{{background-color: #f38327 ;}}
 
     .informacoes{
       width: 90%;
@@ -889,3 +890,11 @@ header{
         height: 11vh;     
       }
 }
+            
+
+
+
+
+
+
+ 
