@@ -288,6 +288,8 @@
       h3{font-size: 1.5vh;}
     
       footer{background-color: #ff841f ;}
+      h3{color:#ff841f}
+      h4{color: #FE8F33}
 
     .informacoes{
       width: 90%;
@@ -386,7 +388,7 @@
       #align-prod{margin: 0vh 0 35.5vh 0;} 
 
       .lista-produtos li:hover{
-        background-color: #FF7400;
+        background-color: #ff841f;
         color: #fff;
         padding: 1vh;
         border-radius: 5vh;
@@ -409,7 +411,7 @@
       font-size: 1.2vh;
     }    
       .dropdown-left li:hover{
-        background-color: #FF7400;
+        background-color: #FE8F33;
         color: #fff;
         padding:.9vh;
         border-radius: 5vh;
@@ -446,7 +448,7 @@
       font-size: 1.2vh;
     }    
       .dropdown-right li:hover{
-        background-color: #FF7400;
+        background-color: #FE8F33;
         color: #fff;
         padding:.9vh;
         border-radius: 5vh;
@@ -482,6 +484,10 @@
       }
       h4{font-size: 1.2vh;}
       h3{font-size: 1.5vh;}
+
+      footer{background-color: #ff841f ;}
+      h3{color:#ff841f}
+      h4{color: #FE8F33}
     
 
     .informacoes{
@@ -578,7 +584,7 @@
       #align-prod{margin: 0vh 0 60vh 0;} 
 
       .lista-produtos li:hover{
-        background-color: #FF7400;
+        background-color: #ff841f;
         color: #fff;
         padding: 2vh;
         border-radius: 5vh;
@@ -601,7 +607,7 @@
       font-size: 2.3vh;
     }    
       .dropdown-left li:hover{
-        background-color: #FF7400;
+        background-color: #FE8F33;
         color: #fff;
         padding:.9vh;
         border-radius: 5vh;
@@ -637,7 +643,7 @@
       font-size:2.3vh;
     }    
       .dropdown-right li:hover{
-        background-color: #FF7400;
+        background-color: #FE8F33;
         color: #fff;
         padding:.9vh;
         border-radius: 5vh;
@@ -673,6 +679,9 @@
       h4{font-size: 2.5vh;}
       h3{font-size: 2.8vh;}
     
+      footer{background-color: #ff841f ;}
+      h3{color:#ff841f}
+      h4{color: #FE8F33}
 
     .informacoes{
       width: 90%;
